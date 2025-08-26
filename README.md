@@ -4,7 +4,7 @@ It follows Page Object Model (POM) with reusable helpers and fixtures for mainta
 
 The test flow includes:
 - 0pen the app
-- Add a new task (from test data or generated dynamically)
+- Add a new task
 - Verify it appears in the list
 - Mark the task as completed (check .completed class)
 - Delete the task and verify it’s removed
