@@ -35,7 +35,7 @@ export class TodoPage{
     }
 
     async verifyTaskIsMarkedAsCompleted(task: string){
-        const className = await this.li_listTask.filter({hasText: task}).getByRole("button", {name: "Complete"}).getAttribute("class")
+        const className = await this.li_listTask.filter({hasText: task}).getAttribute("class")
         expect(className).toMatch('completed');
     }
 
