@@ -9,41 +9,42 @@ The test flow includes:
 - Mark the task as completed (check .completed class)
 - Delete the task and verify it’s removed
 
-## Project Structure**
-MiniTodoApp-TestAutomation/
-│── env/                 # Environment configs
-│   └── .env.local
-│── fixtures/            # Base fixtures (custom test setup)
-│   └── basePage.ts
-│── helpers/             # Utility & helper functions
-│   └── DataHelpers.ts
-│── pages/               # Page Object Models
-│   └── todoPage.ts
-│── testdata/            # Test data in JSON format
-│   └── tasks.json
-│── tests/               # Test specs
-│   └── todoTest.spec.ts
-│── playwright-report/   # Playwright HTML reports
-│── test-results/        # Traces, videos, screenshots
-│── playwright.config.ts # Playwright configuration
-│── package.json
-│── README.md
+## Project Structure
 
+```MiniTodoApp-TestAutomation/
+├── env/ # Environment configuration files
+│ └── .env.local
+├── fixtures/ # Base fixtures for custom test setup
+│ └── basePage.ts
+├── helpers/ # Utility and helper functions
+│ └── DataHelpers.ts
+├── pages/ # Page Object Models
+│ └── todoPage.ts
+├── testdata/ # Test data in JSON format
+│ └── tasks.json
+├── tests/ # Test specifications
+│ └── todoTest.spec.ts
+├── playwright-report/ # Playwright HTML reports
+├── test-results/ # Traces, videos, screenshots
+├── playwright.config.ts # Playwright configuration file
+├── package.json # Project metadata and dependencies
+└── README.md # Project documentation
+```
 
 ## Setup & Installation
-Clone this repository
-git clone https://github.com/HuongTu/MiniTodoApp-TestAutomation.git
+Clone this repository: 
+```git clone https://github.com/HuongTu/MiniTodoApp-TestAutomation.git ```
 
-Install dependencies
-npm install
+Install dependencies: 
+```npm install```
 
-Install Playwright browsers
-npx playwright install
+Install Playwright browsers: 
+```npx playwright install```
 
 ## Run Tests
-Run all tests
-npx playwright test
+Run all tests: 
+```npx playwright test```
 
 ## Reports
 After a test run, generate and open the HTML report:
-npx playwright show-report
+```npx playwright show-report```
